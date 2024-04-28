@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>GUID Generator</title>
+
+    <link href="/guid-generator/favicon.ico"
+          type="image/x-icon"
+          rel="icon" />
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- For Google -->
+    <meta name="description"
+          content="A simple, anonymous, no tracking GUID generator. Written with pure HTML, CSS and JavaScript. No framework, no library." />
+    <meta name="keywords"
+          content="open source, anonymous, guid, generator" />
+
+    <meta name="author"
+          content="Hunter Tran" />
+    <meta name="copyright"
+          content="Hunter Tran" />
+    <meta name="application-name"
+          content="GUID Generator" />
+
+    <meta name="google-site-verification"
+          content="Ht7w80BIN_bvclDb3Zu_lKTvlE4Rm1XlNRU8eKoWNH0" />
+
+    <!-- For Facebook -->
+    <meta property="og:title"
+          content="GUID Generator" />
+    <meta property="og:type"
+          content="article" />
+    <meta property="og:image"
+          content="https://i.imgur.com/YeYIbWu.png" />
+    <meta property="og:url"
+          content="https://huntertran.github.io/guid-generator/" />
+    <meta property="og:description"
+          content="A simple, anonymous, no tracking GUID Generator. Written with pure HTML, CSS and JavaScript. No framework, no library." />
+
+    <!-- For Twitter -->
+    <meta name="twitter:card"
+          content="summary" />
+    <meta name="twitter:title"
+          content="GUID Generator" />
+    <meta name="twitter:description"
+          content="A simple, anonymous, no tracking GUID Generator. Written with pure HTML, CSS and JavaScript. No framework, no library." />
+    <meta name="twitter:image"
+          content="https://i.imgur.com/YeYIbWu.png" />
+</head>
+
+<body>
+    <div class="content">
+        <h1>Generate a secure GUID</h1>
+        <h3>Anonymous, no tracking and open source</h3>
+        <p id="copied">Copied</p>
+        <div class="result-container">
+            <textarea id="result"
+                      rows="3"
+                      spellcheck="false"></textarea>
+            <button class="copy-button icon-button"
+                    id="clipboard"></button>
+            <button class="new-button icon-button"
+                    id="generate"></button>
+        </div>
+        <br>
+        <div class="settings">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <label>All Uppercase</label>
+        </div>
+        <br>
+        <a class="hover-button"
+           rel="noopener noreferrer"
+           href="https://github.com/huntertran/guid-generator"
+           target="_blank"><span>View on Github </span></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
