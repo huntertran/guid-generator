@@ -57,12 +57,12 @@
 
 <body>
     <div class="content">
-        <h1>Generate a secure GUID</h1>
+        <h1>Generate a random GUID</h1>
         <h3>Anonymous, no tracking and open source</h3>
         <p id="copied">Copied</p>
         <div class="result-container">
             <textarea id="result"
-                      rows="3"
+                      rows="2"
                       spellcheck="false"></textarea>
             <button class="copy-button icon-button"
                     id="clipboard"></button>
@@ -70,12 +70,11 @@
                     id="generate"></button>
         </div>
         <br>
-        <div class="settings">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <label>All Uppercase</label>
+        <div class="setting checkbox">
+            <input type="checkbox"
+                   id="uppercase"
+                   checked />
+            <label>UPPERCASE</label>
         </div>
         <br>
         <a class="hover-button"

@@ -1,173 +1,114 @@
 @charset "UTF-8";
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-    background-color: #f9fbfd;
-    color: #d22d27;
-    padding: 48px;
-    border: 2px solid #d22d27;
-    text-align: center;
-    max-width: 720px;
+  background-color: #f9fbfd;
+  color: #d22d27;
+  padding: 48px;
+  border: 2px solid #d22d27;
+  text-align: center;
+  max-width: 720px;
 }
 
 .result-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #result {
-    width: 80%;
-    height: auto;
-    font-size: 2rem;
-    padding: 8px;
-    resize: vertical;
-    min-height: 55px;
+  width: 80%;
+  height: auto;
+  font-size: 2rem;
+  padding: 8px;
+  resize: vertical;
+  min-height: 55px;
 }
 
 .setting {
-    padding: 5px;
-    text-align: left;
+  padding: 5px;
+  text-align: left;
 }
-
 .setting.checkbox {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+.setting.checkbox label {
+  margin-left: 4px;
 }
 
-.setting.checkbox label {
-    margin-left: 4px;
+#length {
+  text-align: center;
+}
+
+input[type=number] {
+  width: 56px;
+  height: 24px;
+}
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
 }
 
 .icon-button {
-    background-size: 2rem;
-    width: 55px;
-    height: 55px;
-    display: inline-block;
-    border: 0;
-    background-color: transparent;
-    background-position: 50%;
-    background-repeat: no-repeat;
+  background-size: 2rem;
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
-
 .icon-button.copy-button {
-    background-image: url(./image/copy.svg);
+  background-image: url(./image/copy.svg);
 }
-
 .icon-button.new-button {
-    background-image: url(./image/new.svg);
+  background-image: url(./image/new.svg);
 }
 
 #copied {
-    opacity: 0;
-    transition: opacity 0.1s;
+  opacity: 0;
+  transition: opacity 0.1s;
 }
-
 #copied.show {
-    opacity: 1;
-    transition: opacity 0.1s;
+  opacity: 1;
+  transition: opacity 0.1s;
 }
 
 .hover-button {
-    transition: all 0.5s;
-    cursor: pointer;
-    color: #d22d27;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: #d22d27;
 }
-
 .hover-button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
-
 .hover-button span:after {
-    content: "»";
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -10px;
-    transition: 0.5s;
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
 }
-
 .hover-button:hover span {
-    padding-right: 16px;
+  padding-right: 16px;
 }
-
 .hover-button:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* The slider */
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
+  opacity: 1;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
